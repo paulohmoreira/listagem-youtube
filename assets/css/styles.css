@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +8,157 @@
 
 html {
   color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.875rem;
 }
 
 a {
   text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  display: inline-block;
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: 60px 1fr;
+  grid-template-areas: "navbar navbar" "sidebar main";
+}
+
+button {
+  cursor: pointer;
+}
+
+.navbar {
+  grid-area: navbar;
+  padding: 8px 20px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.main {
+  grid-area: main;
+}
+
+.menu-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+
+.left-menu {
+  justify-self: start;
+  width: 150px;
+  height: 25px;
+}
+
+.left-menu button {
+  border: none;
+  background-color: transparent;
+  margin-right: 32px;
+}
+
+.center-menu {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  justify-self: center;
+  height: 40px;
+}
+
+.right-menu {
+  justify-self: end;
+}
+
+.right-menu ul li:nth-child(2) {
+  margin: 0 20px;
+}
+
+.right-menu .profile-img {
+  width: 32px;
+  border-radius: 50%;
+}
+
+.center-menu input {
+  padding-left: 5px;
+  border: 1px solid #CCCCCC;
+  border-right: none;
+  font-size: 1rem;
+}
+
+.center-menu button {
+  border: 1px solid #CCCCCC;
+  height: 100%;
+  padding: 8px 19px 8px 14px;
+}
+
+.sidebar {
+  padding-top: 24px;
+  padding-left: 20px;
+}
+
+.sidebar ul li {
+  display: block;
+  margin-bottom: 24px;
+  height: 24px;
+}
+
+.sidebar ul li a img {
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.main {
+  background-color: #f9f9f9;
+  padding: 40px;
+}
+
+.video-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.video-card {
+  padding: 1rem;
+}
+
+.thumbnail {
+  margin-bottom: 0.875rem;
+}
+
+.video-details p {
+  font-weight: 700;
+  width: 200px;
+  height: 75px;
+  margin-left: 0.625rem;
+}
+
+.video-details span {
+  font-weight: 400;
+  color: #515151;
+  display: block;
+  margin-top: 1rem;
+}
+
+.video-details img {
+  vertical-align: top;
+}
+
+.video-details img,
+.video-details p {
+  display: inline-block;
 }
