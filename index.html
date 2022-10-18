@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/index.js" defer></script>
   <title>Youtube - Página Inicial</title>
 </head>
 
@@ -18,7 +19,7 @@
       </div>
 
       <div class="center-menu">
-        <input type="text" placeholder="Pesquisar">
+        <input type="text" placeholder="Pesquisar" id="search-input" onkeyup="search()">
         <button><img src="assets/images/search.svg" alt="Icone de lupa do botão pesquisar"></button>
       </div>
 
@@ -49,7 +50,7 @@
   </aside>
 
   <main class="main">
-    <section class="video-wrapper">
+    <section class="video-wrapper" id="video-wrapper">
       <div class="video-card">
         <a href="https://youtu.be/PkEpHoXUkeM" target="_blank">
           <div class="thumbnail">
