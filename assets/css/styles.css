@@ -163,6 +163,108 @@ button {
   display: inline-block;
 }
 
+/* Estilos da página de vídeos */
+
+.hidden {
+  visibility: hidden;
+}
+
+.main #video-player {
+  display: block;
+}
+
+.video-player {
+  width: 100%;
+  margin: auto;
+  padding-top: 50%;
+  position: relative;
+}
+
+.player-content iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 957px;
+  max-height: 537px;
+}
+
+.video-description {
+  margin: 16px auto;
+}
+
+.video-description h1 {
+  font-size: 1.42rem;
+}
+
+.chanel-infos,
+.video-description p {
+  color: #515151;
+}
+
+.chanel-infos,
+.video-description h3 {
+  font-size: 1rem;
+}
+
+.chanel-infos span {
+  color: black;
+  display: block;
+}
+
+.video-actions button {
+  color: white;
+  background-color: #CC0000;
+  width: 159px;
+  height: 40px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+}
+
+.video-actions ul li a img {
+  vertical-align: middle;
+}
+
+.video-actions ul li a {
+  margin: 0 1rem;
+}
+
+.video-actions ul li a:last-child {
+  margin-right: 30px;
+}
+
+.video-actions ul li a,
+.video-actions button,
+.chanel-infos span {
+  font-weight: 700;
+}
+
+.chanel-infos {
+  display: flex;
+  align-items: center;
+  max-width: 160px;
+  justify-content: space-between;
+}
+
+.chanel-infos p {
+  margin-left: 0.75rem;
+}
+
+.video-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.video-description h3 {
+  margin: 15px 0;
+}
+
 @media (max-width: 350px) {
 
   body {
