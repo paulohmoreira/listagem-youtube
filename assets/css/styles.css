@@ -363,6 +363,8 @@ button {
 
   .video-wrapper {
     justify-items: center;
+    grid-template-rows: 280px;
+    height: 100vh;
   }
 
   .center-menu {
